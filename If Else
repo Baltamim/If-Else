@@ -1,0 +1,35 @@
+package utilscanner; 
+import java.util.Scanner; 
+public class Utilscanner {   
+public static void main(String[] args) {
+Scanner vari = new Scanner(System.in);
+int t = 4;
+float rata_rata,a,b,c,d;
+String huruf;
+System.out.println("masukan nilai Tugas :");a = vari.nextFloat();
+System.out.println("masukan nilai MID   :");b = vari.nextFloat();
+System.out.println("masukan nilai QUIS  :");c = vari.nextFloat();
+System.out.println("masukan nilai UAS   :");d = vari.nextFloat();
+rata_rata = (a+b+c+d)/t;
+if (rata_rata > 85.00){
+   huruf="A"; 
+}else if (rata_rata >=81 && rata_rata <=85){
+   huruf="A-"; 
+}else if (rata_rata >=76 && rata_rata <=80){
+    huruf="B+";
+}else if (rata_rata >=71 && rata_rata <=75){
+    huruf="B";
+}else if (rata_rata >=66 && rata_rata <=70){
+    huruf="B-";
+}else if (rata_rata >=61 && rata_rata <=65){
+    huruf="C+";
+}else if (rata_rata >=56 && rata_rata <=60){
+    huruf="C";
+ }else if(rata_rata >= 51 && rata_rata <=55) {
+    huruf="D";
+    }else{
+     huruf="E";
+ }
+System.out.println("Nilai Rata-rata        : "+rata_rata);
+System.out.println("Nilai Anda Dalam Huruf : "+huruf);
+}}
